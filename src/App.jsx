@@ -11,7 +11,7 @@ function App() {
     <>
       <BrowserRouter>
         <Routes>
-          <Route path='/' Component={HomePage} />
+          <Route path='/' Component={Homepage} />
         </Routes>
       </BrowserRouter>
     </>
