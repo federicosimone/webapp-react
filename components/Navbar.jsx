@@ -12,13 +12,13 @@ function Navbar() {
                 <div className="container">
                     <div>
                         <a className="navbar-brand" href={"/"}>
-                            <img src={logo} alt="logo zalando" style={{ width: 60, height: 60 }} />
+                            <img src={logo} alt="logo fedlix" style={{ width: 60, height: 60 }} />
                         </a>
                     </div>
                     <div className="d-flex gap-3">
 
                         <NavLink className="btn btn-danger" to="/">Home</NavLink>
-                        <NavLink className="btn btn-danger" to="/products">Lista film</NavLink>
+                        <NavLink className="btn btn-danger" to="/movies">Lista film</NavLink>
                     </div>
                 </div>
             </nav>
