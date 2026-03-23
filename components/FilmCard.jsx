@@ -1,5 +1,6 @@
 import Movies from "../data/exampleList"
 import Placeholder from "../data/placeholder.svg"
+import { Link } from "react-router-dom";
 
 
 function FilmCard() {

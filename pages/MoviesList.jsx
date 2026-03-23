@@ -10,6 +10,7 @@ function MoviesList(props) {
                 <FilmCard
                     id={props.id}
                     title={props.title}
+                    image={props.image}
                 />
 
             </div>
