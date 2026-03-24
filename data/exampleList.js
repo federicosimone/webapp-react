@@ -29,7 +29,7 @@ const Movies =
             "genre": "Romance",
             "release_year": 1997,
             "abstract": "A romantic story set against the tragic sinking of the RMS Titanic.",
-            "image": "titanic.jpg",
+            "image": {},
             "created_at": "2024-11-29T10:40:13.000Z",
             "updated_at": "2025-05-22T10:55:27.000Z"
         },
@@ -51,7 +51,7 @@ const Movies =
             "genre": "Science Fiction",
             "release_year": 2014,
             "abstract": "A team of explorers travels through a wormhole in space to save humanity.",
-            "image": "interstellar.jpg",
+            "image": "interstellar_bg.jpg",
             "created_at": "2024-11-29T10:40:13.000Z",
             "updated_at": "2025-05-22T10:55:27.000Z"
         }

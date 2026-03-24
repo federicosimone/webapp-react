@@ -4,6 +4,7 @@ import Homepage from "../pages/Homepage";
 import MoviesList from "../pages/MoviesList";
 import DefaultLayout from "../layout/DefaultLayout";
 import Details from "../components/Details";
+import MovieDetailsPage from "../pages/MovieDetailsPage";
 
 import './App.css'
 
@@ -18,7 +19,7 @@ function App() {
           <Route Component={DefaultLayout}>
             <Route path='/' Component={Homepage} />
             <Route path='/movies' Component={MoviesList} />
-            <Route path='/movies/:id' Component={Details} />
+            <Route path='/movies/:id' Component={MovieDetailsPage} />
           </Route>
         </Routes>
       </BrowserRouter>
