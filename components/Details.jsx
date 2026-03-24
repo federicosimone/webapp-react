@@ -1,5 +1,5 @@
 import style from './Details.module.css'
-import backgroundImg from '../src/assets/interstellar_bg.jpg'
+
 
 function Details(props) {
     return (

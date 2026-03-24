@@ -112,7 +112,30 @@ const Movies =
             "abstract": "A hacker discovers the truth about his reality and his role in the war against its controllers.",
             "image": "matrix.jpg",
             "created_at": "2024-11-29T10:40:13.000Z",
-            "updated_at": "2025-05-22T10:55:27.000Z"
+            "updated_at": "2025-05-22T10:55:27.000Z",
+            "reviews": [
+                {
+                    "id": 1,
+                    "movie_id": 1,
+                    "name": "Alice",
+                    "vote": 5,
+                    "text": "A mind-bending masterpiece."
+                },
+                {
+                    "id": 2,
+                    "movie_id": 1,
+                    "name": "Bob",
+                    "vote": 4,
+                    "text": "Great visuals and a compelling story."
+                },
+                {
+                    "id": 3,
+                    "movie_id": 1,
+                    "name": "Charlie",
+                    "vote": 3,
+                    "text": "Confusing at times, but worth watching."
+                }
+            ]
         },
         {
             "id": 5,
@@ -123,7 +146,30 @@ const Movies =
             "abstract": "A team of explorers travels through a wormhole in space to save humanity.",
             "image": "interstellar_bg.jpg",
             "created_at": "2024-11-29T10:40:13.000Z",
-            "updated_at": "2025-05-22T10:55:27.000Z"
+            "updated_at": "2025-05-22T10:55:27.000Z",
+            "reviews": [
+                {
+                    "id": 1,
+                    "movie_id": 1,
+                    "name": "Alice",
+                    "vote": 5,
+                    "text": "A mind-bending masterpiece."
+                },
+                {
+                    "id": 2,
+                    "movie_id": 1,
+                    "name": "Bob",
+                    "vote": 4,
+                    "text": "Great visuals and a compelling story."
+                },
+                {
+                    "id": 3,
+                    "movie_id": 1,
+                    "name": "Charlie",
+                    "vote": 3,
+                    "text": "Confusing at times, but worth watching."
+                }
+            ]
         }
 
     ]

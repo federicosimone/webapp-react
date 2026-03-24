@@ -7,7 +7,6 @@ function Reviews(props) {
                         <li className="list-group-item fw-bold">{review.name}</li>
                         <li className="list-group-item"><i className="fa-solid fa-star"></i> {review.vote}</li>
                         <li className="list-group-item">{review.text}</li>
-                        <li> </li>
                     </ul>
                 </div>
             ))}
