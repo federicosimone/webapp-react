@@ -25,8 +25,11 @@ function MovieDetailsPage() {
                             abstract={movie.abstract}
                             image={movie.image} />
                         <h1 className="fw-bold">Recensioni:</h1>
-                        <Reviews
-                            review={movie.reviews} />
+                        <div className="container d-flex justify-content-between">
+                            <Reviews
+                                review={movie.reviews} />
+                        </div>
+
 
                     </div>
                 </div>
@@ -36,5 +39,3 @@ function MovieDetailsPage() {
 }
 
 export default MovieDetailsPage;
-
-
