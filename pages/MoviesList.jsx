@@ -8,26 +8,26 @@ function MoviesList() {
 
     return (
         <>
+            <div className={`${style.listBackground}`}>
+                <div className={`${style.listContent} container pt-5 pb-5`}>
+                    <div className="d-flex justify-content-between">
+                        <h1 className="d-inline">Seleziona il film di cui vuoi leggere le informazioni</h1>
+                        <Link className={`btn mb-3 ${style.btnColor}`} to={`/`}>Torna alla Home</Link>
+                    </div>
+                    <div className="d-flex flex-wrap gap-3">
 
-            <div className="container pt-5 pb-5">
-                <div className="d-flex justify-content-between">
-                    <h1 className="d-inline">Seleziona il film di cui vuoi leggere le informazioni</h1>
-                    <Link className="btn btn-danger mb-3" to={`/`}>Torna alla Home</Link>
-                </div>
-                <div className="d-flex flex-wrap gap-3">
-
-                    {Movies.map((movie) => (
-                        <div key={movie.id}>
-                            <FilmCard
-                                id={movie.id}
-                                title={movie.title}
-                                abstract={movie.abstract} />
-                        </div>
-                    ))
-                    }
+                        {Movies.map((movie) => (
+                            <div key={movie.id}>
+                                <FilmCard
+                                    id={movie.id}
+                                    title={movie.title}
+                                    abstract={movie.abstract} />
+                            </div>
+                        ))
+                        }
+                    </div>
                 </div>
             </div>
-
         </>
     )
 }

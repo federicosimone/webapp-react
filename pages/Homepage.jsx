@@ -12,7 +12,7 @@ function Homepage() {
                         <div className="text-center">
                             <h1 className="fw-bold">Puoi avere informazioni sul film che preferisci</h1>
                             <h2>Visita la nostra lista cliccando qui sotto</h2>
-                            <Link className="btn btn-danger mt-2" to={`/movies/`}><span className="fw-semibold">Lista film</span></Link>
+                            <Link className={`btn mt-2 ${style.btnColor}`} to={`/movies/`}><span className="fw-semibold">Lista film</span></Link>
                         </div>
                     </div>
 
