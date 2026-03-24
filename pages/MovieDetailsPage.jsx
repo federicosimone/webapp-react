@@ -30,8 +30,8 @@ function MovieDetailsPage() {
                         />
                         <h1 className="fw-bold">Recensioni:</h1>
                         <div className="container d-flex justify-content-between">
-                            <Reviews
-                                review={movie.reviews} />
+                            {movie.reviews?.map(review => <Reviews review={review} />)}
+
                         </div>
 
 
