@@ -9,7 +9,30 @@ const Movies =
             "abstract": "A skilled thief is given a chance at redemption if he can successfully perform inception.",
             "image": "inception.jpg",
             "created_at": "2024-11-29T10:40:13.000Z",
-            "updated_at": "2025-05-22T10:55:27.000Z"
+            "updated_at": "2025-05-22T10:55:27.000Z",
+            "reviews": [
+                {
+                    "id": 1,
+                    "movie_id": 1,
+                    "name": "Alice",
+                    "vote": 5,
+                    "text": "A mind-bending masterpiece."
+                },
+                {
+                    "id": 2,
+                    "movie_id": 1,
+                    "name": "Bob",
+                    "vote": 4,
+                    "text": "Great visuals and a compelling story."
+                },
+                {
+                    "id": 3,
+                    "movie_id": 1,
+                    "name": "Charlie",
+                    "vote": 3,
+                    "text": "Confusing at times, but worth watching."
+                }
+            ]
         },
         {
             "id": 2,
@@ -20,7 +43,31 @@ const Movies =
             "abstract": "The story of a powerful Italian-American crime family and their struggles.",
             "image": "the_godfather.jpg",
             "created_at": "2024-11-29T10:40:13.000Z",
-            "updated_at": "2025-05-22T10:55:27.000Z"
+            "updated_at": "2025-05-22T10:55:27.000Z",
+            "reviews": [
+                {
+                    "id": 1,
+                    "movie_id": 1,
+                    "name": "Alice",
+                    "vote": 5,
+                    "text": "A mind-bending masterpiece."
+                },
+                {
+                    "id": 2,
+                    "movie_id": 1,
+                    "name": "Bob",
+                    "vote": 4,
+                    "text": "Great visuals and a compelling story."
+                },
+                {
+                    "id": 3,
+                    "movie_id": 1,
+                    "name": "Charlie",
+                    "vote": 3,
+                    "text": "Confusing at times, but worth watching."
+                }
+            ]
+
         },
         {
             "id": 3,
@@ -31,7 +78,30 @@ const Movies =
             "abstract": "A romantic story set against the tragic sinking of the RMS Titanic.",
             "image": {},
             "created_at": "2024-11-29T10:40:13.000Z",
-            "updated_at": "2025-05-22T10:55:27.000Z"
+            "updated_at": "2025-05-22T10:55:27.000Z",
+            "reviews": [
+                {
+                    "id": 1,
+                    "movie_id": 1,
+                    "name": "Alice",
+                    "vote": 5,
+                    "text": "A mind-bending masterpiece."
+                },
+                {
+                    "id": 2,
+                    "movie_id": 1,
+                    "name": "Bob",
+                    "vote": 4,
+                    "text": "Great visuals and a compelling story."
+                },
+                {
+                    "id": 3,
+                    "movie_id": 1,
+                    "name": "Charlie",
+                    "vote": 3,
+                    "text": "Confusing at times, but worth watching."
+                }
+            ]
         },
         {
             "id": 4,
