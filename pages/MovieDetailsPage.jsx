@@ -13,7 +13,7 @@ function MovieDetailsPage() {
         <>
             <div>
                 <div style={{
-                    backgroundImage: `url(${backgroundImg})`,
+                    backgroundImage: `url(${backgroundImg})`,  //perchè? perchè io vorrei utilizzare anche qui l'overlay, riesco a farlo dal modulo css
                     backgroundSize: 'cover',
                     backgroundPosition: 'center',
                     minHeight: '50rem'
