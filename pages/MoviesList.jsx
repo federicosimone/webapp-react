@@ -6,8 +6,9 @@ function MoviesList() {
 
     return (
         <>
-            <p>Questa è la pagina di elenco dei film</p>
+
             <div className="container pt-5 pb-5">
+                <h1>Seleziona il film di cui vuoi leggere le informazioni</h1>
                 <div className="d-flex flex-wrap gap-4">
 
                     {Movies.map((movie) => (
