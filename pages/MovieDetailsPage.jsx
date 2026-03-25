@@ -3,34 +3,43 @@ import Details from "../components/Details";
 import Movies from "../data/exampleList"
 import Reviews from "../components/Reviews";
 import backgroundImg from "../src/assets/interstellar_bg.jpg"
+import axios from "axios";
+import { useState, useEffect } from "react";
 
 function MovieDetailsPage() {
 
     const { id } = useParams();
-    const movie = Movies[id - 1];
-    const imagePat = "interstellar_bg.jpg";
+    //const movie = Movies[id - 1];
+    //const imagePat = "interstellar_bg.jpg";
     //const image = new URL(`../src/assets/${imagePat}`, import.meta.url).href;
 
+    const [Movie, setMovie] = useState({})
 
+    useEffect(() => {
+        axios.get(`http://localhost:3000/movies/${id}`).then(res => {
+            console.log(res.data);
+            setMovie(res.data)
+        }).catch(err => console.log("ops", err.message))
+    }, [id]);
 
     return (
         <>
             <div>
                 <div style={{
-                    backgroundImage: `url('/${movie.image}')`,
+                    backgroundImage: `url('/${Movie.image}')`,
                     backgroundSize: 'cover',
                     backgroundPosition: 'center',
                     minHeight: '50rem'
                 }}>
                     <div className="container">
-                        <Details
-                            id={movie.id}
-                            title={movie.title}
-                            abstract={movie.abstract}
-                        />
+                        <div>
+                            <h1 className='fw-bold'>{Movie?.title}</h1>
+                            <p>{Movie?.abstract}</p>
+
+                        </div>
                         <h1 className="fw-bold">Recensioni:</h1>
                         <div className="container d-flex justify-content-between">
-                            {movie.reviews?.map(review => <Reviews review={review} />)}
+                            {Movie.reviews?.map(review => <Reviews review={review} />)}
 
                         </div>
 
