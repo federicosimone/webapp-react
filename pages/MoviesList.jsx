@@ -1,10 +1,21 @@
 import { Link } from "react-router-dom"
 import FilmCard from "../components/FilmCard"
-import Movies from "../data/exampleList"
+
 import style from "./MoviesList.module.css"
+import axios from "axios"
+import { useEffect, useState } from "react"
 
 
 function MoviesList() {
+
+    const [Movies, setMovies] = useState([])
+
+    useEffect(() => {
+        axios.get("http://localhost:3000/movies").then(res => {
+            console.log(res.data);
+            setMovies(res.data)
+        }).catch(err => console.log("ops", err.message))
+    }, []);
 
     return (
         <>
@@ -16,14 +27,7 @@ function MoviesList() {
                     </div>
                     <div className="d-flex flex-wrap gap-3">
 
-                        {Movies.map((movie) => (
-                            <div key={movie.id}>
-                                <FilmCard
-                                    id={movie.id}
-                                    title={movie.title}
-                                    abstract={movie.abstract} />
-                            </div>
-                        ))
+                        {Movies?.map(movie => <FilmCard movie={movie} />)
                         }
                     </div>
                 </div>
