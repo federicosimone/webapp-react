@@ -2,6 +2,7 @@ import { Link, useParams } from "react-router-dom";
 import Reviews from "../components/Reviews";
 import axios from "axios";
 import { useState, useEffect } from "react";
+import style from "./MovieDetailsPage.module.css"
 
 function MovieDetailsPage() {
 
@@ -25,25 +26,31 @@ function MovieDetailsPage() {
     return (
         <>
             <div>
-                <div style={{
-                    backgroundImage: `url('http://localhost:3000/movies/${Movie.image}')`,
-                    backgroundSize: 'cover',
-                    backgroundPosition: 'top',
-                    minHeight: '50rem'
-                }}>
-                    <div className="container">
-                        <div>
-                            <h1 className='fw-bold'>{Movie?.title}</h1>
-                            <p>{Movie.abstract}</p>
+                <div className={`${style.backGround}`}>
+
+                    <div className={`${style.content} container pt-5`}>
+                        <div className="d-flex">
+                            <div>
+                                <img src={`http://localhost:3000/movies/${Movie.image}`} alt="MoviePoster" className={`${style.posterImg}`} />
+                            </div>
+                            <div className={`${style.info} ms-5 p-2`}>
+                                <div className="">
+                                    <h1 className='fw-bold'>{Movie?.title}</h1>
+                                    <p>{Movie.abstract}</p>
+                                    <p>Regista: {Movie.director}</p>
+                                    <p>Genere: {Movie.genre}</p>
+                                    <p>Anno: {Movie.release_year}</p>
+                                </div>
+                                <div>
+                                    <h2 className="d-block fw-bold">Recensioni:</h2>
+                                    {Movie.reviews?.map(review => <Reviews review={review} />)}
+
+                                </div>
+                                <Link className="btn btn-danger" to="/movies">Torna alla lista</Link>
+                            </div>
+
 
                         </div>
-                        <h1 className="fw-bold">Recensioni:</h1>
-                        <div className="container d-flex justify-content-between">
-                            {Movie.reviews?.map(review => <Reviews review={review} />)}
-
-                        </div>
-
-
                     </div>
                 </div>
             </div>
