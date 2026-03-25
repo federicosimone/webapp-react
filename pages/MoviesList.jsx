@@ -1,6 +1,5 @@
 import { Link } from "react-router-dom"
 import FilmCard from "../components/FilmCard"
-
 import style from "./MoviesList.module.css"
 import axios from "axios"
 import { useEffect, useState } from "react"

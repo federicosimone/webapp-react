@@ -1,8 +1,5 @@
-import { useParams } from "react-router-dom";
-import Details from "../components/Details";
-import Movies from "../data/exampleList"
+import { Link, useParams } from "react-router-dom";
 import Reviews from "../components/Reviews";
-import backgroundImg from "../src/assets/interstellar_bg.jpg"
 import axios from "axios";
 import { useState, useEffect } from "react";
 
@@ -16,6 +13,9 @@ function MovieDetailsPage() {
     const [Movie, setMovie] = useState({})
 
     useEffect(() => {
+
+        console.log("Siamo sull pagina dell'id", id)
+
         axios.get(`http://localhost:3000/movies/${id}`).then(res => {
             console.log(res.data);
             setMovie(res.data)
@@ -26,15 +26,15 @@ function MovieDetailsPage() {
         <>
             <div>
                 <div style={{
-                    backgroundImage: `url('/${Movie.image}')`,
+                    backgroundImage: `url('http://localhost:3000/movies/${Movie.image}')`,
                     backgroundSize: 'cover',
-                    backgroundPosition: 'center',
+                    backgroundPosition: 'top',
                     minHeight: '50rem'
                 }}>
                     <div className="container">
                         <div>
                             <h1 className='fw-bold'>{Movie?.title}</h1>
-                            <p>{Movie?.abstract}</p>
+                            <p>{Movie.abstract}</p>
 
                         </div>
                         <h1 className="fw-bold">Recensioni:</h1>
