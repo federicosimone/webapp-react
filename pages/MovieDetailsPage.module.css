@@ -23,6 +23,7 @@
 
 .posterImg {
     width: 30rem;
+    border: 2px solid white;
 }
 
 .info {

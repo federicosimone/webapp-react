@@ -26,7 +26,7 @@ function MoviesList() {
                     </div>
                     <div className="d-flex flex-wrap gap-3">
 
-                        {Movies?.map(movie => <FilmCard movie={movie} />)
+                        {Movies?.map((movie, i) => <FilmCard key={i} movie={movie} />)
                         }
                     </div>
                 </div>

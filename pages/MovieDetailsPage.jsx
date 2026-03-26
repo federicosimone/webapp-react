@@ -43,7 +43,7 @@ function MovieDetailsPage() {
                                 </div>
                                 <div>
                                     <h2 className="d-block fw-bold">Recensioni:</h2>
-                                    {Movie.reviews?.map(review => <Reviews review={review} />)}
+                                    {Movie.reviews?.map((review, i) => <Reviews key={i} review={review} />)}
 
                                 </div>
                                 <Link className="btn btn-danger" to="/movies">Torna alla lista</Link>

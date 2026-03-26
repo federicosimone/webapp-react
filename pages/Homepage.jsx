@@ -10,7 +10,7 @@ function Homepage() {
                 <div className={`${style.content} container`}>
                     <div className="d-flex justify-content-center align-items-center" style={{ height: "50rem" }}>
                         <div className="text-center">
-                            <h1 className="fw-bold">Puoi avere informazioni sul film che preferisci</h1>
+                            <h1 className="fw-bold">Puoi avere informazioni sui film che preferisci</h1>
                             <h2>Visita la nostra lista cliccando qui sotto</h2>
                             <Link className={`btn mt-2 ${style.btnColor}`} to={`/movies/`}><span className="fw-semibold">Lista film</span></Link>
                         </div>

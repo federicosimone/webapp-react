@@ -1,7 +1,7 @@
 .background {
-    background-image: url(../src/assets/bg_homepage.avif);
+    background-image: url(../src/assets/deadpoolBg.jpg);
     background-size: cover;
-    background-position: center;
+    background-position: top;
     max-width: 100%;
     min-height: 50rem;
     position: relative;
