@@ -23,3 +23,6 @@ function FilmCard({ movie }) {
 
 export default FilmCard;
 
+
+
+
