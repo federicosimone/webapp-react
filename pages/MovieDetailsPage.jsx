@@ -14,14 +14,17 @@ function MovieDetailsPage() {
 
     const [Movie, setMovie] = useState({})
 
-    useEffect(() => {
-
-        console.log("Siamo sull pagina dell'id", id)
-
+    function getMovieData() {
         axios.get(`http://localhost:3000/movies/${id}`).then(res => {
             console.log(res.data);
             setMovie(res.data)
         }).catch(err => console.log("ops", err.message))
+    };
+
+    useEffect(() => {
+
+        console.log("Siamo sull pagina dell'id", id)
+        getMovieData();
     }, [id]);
 
     return (
@@ -51,7 +54,7 @@ function MovieDetailsPage() {
                                             {Movie.reviews?.map((review, i) => <Reviews key={i} review={review} />)}
                                         </div>
                                         <div className="col col-6">
-                                            <Form movieId={Movie.id} />
+                                            <Form movieId={Movie.id} onNewReview={getMovieData} />
                                         </div>
                                     </div>
                                 </div>

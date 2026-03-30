@@ -3,7 +3,8 @@ import axios from "axios";
 
 function Form(props) {
 
-    const movieId = props.movieId
+    const movieId = props.movieId;
+    const reloadMovieData = props.onNewReview;
 
     const handleSubmit = event => {
         event.preventDefault();
@@ -14,6 +15,7 @@ function Form(props) {
         axios.post(apiUrl, formData).then(result => {
             if (result.data.id) {
                 setFormData(initialValues); // fa si che all'invio, il form si svuoti secondo le initialValues
+                reloadMovieData();
             } else {
                 console.log("ops...Qualcosa è andato storto")
             };
