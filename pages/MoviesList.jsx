@@ -20,7 +20,7 @@ function MoviesList() {
         <>
             <div className={`${style.listBackground}`}>
                 <div className={`${style.listContent} container pt-5 pb-5`}>
-                    <div className="d-flex justify-content-between">
+                    <div className="d-flex justify-content-between mb-3">
                         <h1 className="d-inline">Seleziona il film di cui vuoi leggere le informazioni</h1>
                         <Link className={`btn mb-3 ${style.btnColor}`} to={`/`}>Torna alla Home</Link>
                     </div>

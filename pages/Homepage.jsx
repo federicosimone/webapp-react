@@ -8,7 +8,7 @@ function Homepage() {
         <>
             <div className={`${style.background}`}>
                 <div className={`${style.content} container`}>
-                    <div className="d-flex justify-content-center align-items-center" style={{ height: "50rem" }}>
+                    <div className="d-flex justify-content-center align-items-center" style={{ height: "40rem" }}>
                         <div className="text-center">
                             <h1 className="fw-bold">Puoi avere informazioni sui film che preferisci</h1>
                             <h2>Visita la nostra lista cliccando qui sotto</h2>

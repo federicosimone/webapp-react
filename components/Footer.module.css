@@ -1,0 +1,8 @@
+.logoFooter {
+    background-image: url(/src/assets/FedlixnoBG.png);
+    max-height: 3rem;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+
+}
