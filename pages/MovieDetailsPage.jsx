@@ -51,8 +51,7 @@ function MovieDetailsPage() {
                                             {Movie.reviews?.map((review, i) => <Reviews key={i} review={review} />)}
                                         </div>
                                         <div className="col col-6">
-                                            <h2>Inserisci recensione:</h2>
-                                            <Form />
+                                            <Form movieId={Movie.id} />
                                         </div>
                                     </div>
                                 </div>
